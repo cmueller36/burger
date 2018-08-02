@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>My Burgers</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <ul class="list-group">
+                {{#each burgers}}
+                <li class="list-group-item">{{burger_name}} {{devoured}}</li>
+                <button type="submit" data-id="{{id}}" data-devour="{{devoured}}" class="devour-burger">
+                    {{#if devoured}}Devour{{else}}Devoured{{/if}}
+                </button>
+                {{/each}}
+            </ul>
+        </div>
+        <div class="col-md-6">
+            <button id="devourBurger" type="button" class="btn btn-dark">Dark</button>
+        </div>
+    </div>
+</div>
