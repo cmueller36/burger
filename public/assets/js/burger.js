@@ -12,7 +12,6 @@
             type: "PUT",
             data: newDevourState
         }).then(function(){
-            console.log("change burger to :"+newDevourState)
             location.reload();
         })
     });

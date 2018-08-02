@@ -6,7 +6,7 @@ var burgers = {
       cb(res);
     });
   },
-  update: function(condition, cb) {
+  update: function(tableInput,condition, cb) {
     orm.update("burgers",condition, function(res) {
       cb(res);
     });

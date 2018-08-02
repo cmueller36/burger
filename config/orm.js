@@ -12,7 +12,6 @@ var orm = {
   update: function(tableInput, condition, cb) {
     var queryString = "UPDATE ?? SET devoured = true WHERE id = ?"
 
-    console.log(queryString);
     connection.query(queryString, [tableInput,condition], function(err, result) {
       if (err) {
         throw err;
