@@ -4,6 +4,7 @@
   "description": "package for burger app",
   "main": "index.js",
   "scripts": {
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,8 +22,5 @@
     "express": "^4.16.3",
     "express-handlebars": "^3.0.0",
     "mysql": "^2.16.0"
-  },
-     "scripts": {
-       "start": "node server.js"
-     }
+  }
 }
