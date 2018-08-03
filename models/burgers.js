@@ -10,6 +10,11 @@ var burgers = {
     orm.update("burgers",condition, function(res) {
       cb(res);
     });
+  },
+  create: function(tableInput,cols,vals,cb){
+    orm.create("burgers",cols,vals, function(res){
+      cb(res)
+    })
   }
 };
 
