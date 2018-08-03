@@ -1,16 +1,20 @@
 <div class="container">
     <div class="row">
-        <div class="col-md-12">
-            <h1>My Burgers</h1>
+        <div id="header" class="col-md-12">
+            <h1>Welcome to Good Burgers</h1>
+            <br>
+            <img id="inANDout" src="/assets/img/in-n-out.png">
         </div>
     </div>
+    <br>
+    <br>
     <div class="row">
         <div class="col-md-6">
             <ul class="list-group">
 
                 {{#each burgers}} {{#unless this.devoured}}
-                <li class="list-group-item">{{burger_name}}</li>
-                <button type="submit" data-id="{{id}}" data-devour="{{devoured}}" class="devour-burger">
+                <li class="list-group-item">{{id}}. {{burger_name}}</li>
+                <button type="submit" data-id="{{id}}" data-devour="{{devoured}}" class="devour-burger btn btn-dark">
                     Devour</button>
                 {{/unless}} {{/each}}
 
@@ -27,10 +31,10 @@
         <div class="col-md-4">
             <form>
                 <div class="form-group">
-                    <label for="burgerText">Insert New Burger</label>
+                    <label for="burgerText">Order a Burger</label>
                     <textarea class="form-control" id="burgerText" rows="3"></textarea>
                 </div>
-                <button id="newBurger" type="submit" class="btn btn-primary">Submit</button>
+                <button id="newBurger" type="submit" class="btn btn-dark">Submit</button>
             </form>
         </div>
         <div class="col-md-4"></div>
